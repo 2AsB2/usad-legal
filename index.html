@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>usad-backups · USAD Labs</title>
+<meta name="description" content="usad-backups copies encrypted daily backups of USAD Labs' business systems to the owner's Google Drive.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>usad-backups</h1>
+  <p class="meta">A backup tool by USAD Labs</p>
+
+  <p>usad-backups keeps USAD Labs' business systems safe if a computer or server fails. Once a day it makes a backup of each system's database, encrypts it, and copies it to a folder called <b>usad-backups</b> in the owner's own Google Drive.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Creates one folder, <b>usad-backups</b>, in the Google Drive of the account that signs in.</li>
+    <li>Uploads that day's backup files into the folder. Each file is encrypted before it leaves our server, so the contents can't be read in Drive.</li>
+    <li>Deletes its own backup files after 14 days, so only the last two weeks are kept.</li>
+  </ul>
+
+  <h2>What it can't do</h2>
+  <p>It asks Google only for the <b>drive.file</b> permission. With it, the app can see and change only the files it created itself. It can't open, list or change any other file in your Drive.</p>
+
+  <p>It is used only by USAD Labs for its own systems. It isn't offered to the public.</p>
+
+  <p><a href="privacy.html">Privacy policy</a></p>
+
+  <footer>USAD Labs · Connect. Automate. Accelerate.</footer>
+</main>
+</body>
+</html>
